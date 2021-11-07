@@ -1,0 +1,126 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    }
+
+
+body { background-color: rgb(214, 229, 243);}
+
+
+#header { background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins;
+   
+    }
+
+.titulo { color: yellow;
+    display: flex;
+    margin: 10px;
+    padding: 0px;  
+     } 
+
+.cor {
+ color:black 
+
+}
+
+
+nav ul { width: 500px; /* comprimento que o elemento vai ter em relação ao elemento principal que no caso desse codigo é o header */
+    padding: 20px; 
+ /* como foi feito o reset com o padding a 0px no inicio do css acabou que esse proximo padding aqui foi o primeiro a ser considerado pela hierarquia das divs e assim determinando a margem interna do header */
+    font-size: 20px; 
+    display: flex;
+    justify-content: space-evenly;
+    background-color: yellow;
+    list-style: none;
+    
+}
+
+
+nav a { 
+    color:black;
+    text-decoration: none;
+}
+
+nav ul:hover > li {
+    transform:scale(1.05);}
+
+.titulo:hover {
+        color: #0098DA;
+        transform: scale(1.05); }
+
+
+
+ @media ( max-width:700px) { 
+    .titulo {
+        display: none;} 
+    
+} 
+            
+.logo img {
+    display: block;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 { font-family: Poppins;
+    font-size: 20px; 
+    text-align: center;
+    margin: 20px;
+}
+
+
+main { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}     
+
+.card { 
+    margin: 20px;
+    text-align: center;
+}
+
+.card:hover { 
+    transform: scale(1.05); }
+
+
+.fotos img { 
+
+   border: solid 3px;
+    border-radius: 40px;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+
+    
+}
+
+ 
+    
+button { 
+
+    size: 20px;
+    margin: 50px;
+    padding: 10px;
+    background-color: gray;
+    color: yellow;
+    border-radius: 20px;
+    font-family: Poppins;
+ 
+}
+
+
+   
+
+footer { padding: 20px;
+    background-color: gray;
+    text-align: center;
+    font-family: Poppins;
+    
+}
